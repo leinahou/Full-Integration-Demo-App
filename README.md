@@ -1,2 +1,2 @@
 # Full-Integration-Demo-App
-Full Integration Android POSLink
+full integration, Android POSLink

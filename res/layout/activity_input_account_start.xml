@@ -92,4 +92,47 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         app:srcCompat="@drawable/tap" />
 
+    <LinearLayout
+        android:id="@+id/clsslight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/light1"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/blue_off" />
+
+        <ImageView
+            android:id="@+id/light2"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/yellow_off" />
+
+        <ImageView
+            android:id="@+id/light3"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/green_off" />
+
+        <ImageView
+            android:id="@+id/light4"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/red_off" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,19 +1,16 @@
 package com.example.fullintegrationdemoapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.SparseArray;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.pax.poslink.constant.CardEvent;
 import com.pax.poslink.fullIntegration.FullIntegrationBase;
@@ -26,17 +23,12 @@ public class InputAccountStart extends AppCompatActivity {
     private SparseArray<Light> clssLight = new SparseArray<>();
     private AlphaAnimation blinking;
     LightChanger lightChanger = new LightChanger();
-    private LinearLayout llClssLight;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_account_start);
-
-        LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rootView = inflater.inflate(R.layout.activity_input_account_start, null);
-        llClssLight = (LinearLayout) rootView.findViewById(R.id.clsslight);
 
         Intent intent = getIntent();
         DecimalFormat df = new DecimalFormat("#.00");
